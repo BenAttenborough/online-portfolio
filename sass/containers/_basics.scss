@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(235, 236, 237);
+  background-color: #f9f9f9;
+}
+
+.main-container {
+  padding: 2rem;
 }
