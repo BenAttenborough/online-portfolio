@@ -4,10 +4,6 @@ $pad: 10px;
   margin: 0;
   &:after {
     @extend .clearfix;
-
-    //content: "";
-    //display: table;
-    //clear: both;
   }
 }
 
@@ -57,8 +53,8 @@ $pad: 10px;
 
 /* Opt-in outside padding */
 .grid-pad {
-  //padding: $pad 0 $pad $pad;
-  //[class*='col-']:last-of-type {
-  //  padding-right: $pad;
-  //}
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
 }
