@@ -24,15 +24,24 @@
 
 .card-image,
 .card-text,
-.card-options {
+.card-skills,
+.card-options{
   padding: 1rem;
 }
 
 .card-text {
-  height: 48%;
-  overflow: scroll;
+  //height: 48%;
+  //overflow: scroll;
+  p {
+    color: #555;
+  }
 }
 
 .card-options a {
   margin-right: 1rem;
+}
+
+.skill-img {
+  height: 25px;
+  margin-right: 0.25rem;
 }
