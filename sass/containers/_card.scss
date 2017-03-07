@@ -1,6 +1,7 @@
 .card {
   margin: 0 auto;
   background-color: #fff;
+  padding: 1rem;
   @include border-radius($border-radius);
   @include box-shadow(rgba(153,153,153,1) 1px 1px 5px 0);
   @include transition-property(all);
@@ -22,16 +23,7 @@
   @include border-top-radius($border-radius);
 }
 
-.card-image,
-.card-text,
-.card-skills,
-.card-options{
-  padding: 1rem;
-}
-
 .card-text {
-  //height: 48%;
-  //overflow: scroll;
   p {
     color: #555;
   }
