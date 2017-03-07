@@ -6,4 +6,6 @@ console.log("Item view working");
 $(".card").click(function(){
    console.log("Card clicked");
    console.log(this);
+   $("#overlay").show();
+   $("body").css('overflow','hidden');
 });

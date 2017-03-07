@@ -5,4 +5,11 @@
   background-color: rgb(10, 10, 10);
   background-color: rgba(10, 10, 10, 0.8);
   display: none;
+  overflow-y: scroll;
+}
+
+#overlay-inner-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
