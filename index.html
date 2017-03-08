@@ -14,31 +14,29 @@
 
 <div id="overlay">
     <div id="overlay-inner-container">
-        <div class="card card-overlay">
+        <div class="card-overlay">
+            <div class="card-close-btn-container">
+                <div class="card-close-btn">x</div>
+            </div>
             <div>
-                <img src="img/html-video-600px.jpg"
-                     srcset="img/html-video-200px.jpg 200w,
-                            img/html-video-400px.jpg 400w,
-                            img/html-video-600px.jpg 600w,
-                            img/html-video-800px.jpg 800w,
-                            img/html-video-1000px.jpg 1000w"
-                     sizes="(min-width: 800px) and (max-width: 1199px) 50vw, (min-width: 1200px) 33.3vw, 100vw"
-                     alt="Interactive Video Player"
-                     class="project-image"
-                >
+                <div id="overlay-card-img"></div>
             </div>
             <div class="card-text">
-                <h3>Interactive Video Player</h3>
-                <p>Object Orientated JS program to display video and controls</p>
+                <div id="overlay-card-title"></div>
+                <div id="overlay-card-text"></div>
             </div>
             <div class="card-skills">
                 <hr>
                 <p>Skills:</p>
-                <a href="#">
-                    <img src="img/html-5.svg" alt="github" class="skill-img">
-                    <img src="img/css-logo.svg" alt="github" class="skill-img">
-                    <img src="img/js-file.svg" alt="github" class="skill-img">
-                </a>
+                <img src="img/html-5.svg" alt="github" class="skill-img">
+                <img src="img/css-logo.svg" alt="github" class="skill-img">
+                <img src="img/js-file.svg" alt="github" class="skill-img">
+            </div>
+            <div class="card-options">
+                <a href="https://benattenborough.github.io/web_app_dashboard/" target="_blank">Live
+                    Project</a>
+                <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
+                    repo</a>
             </div>
         </div>
     </div>
@@ -89,6 +87,15 @@
                             <img src="img/js-file.svg" alt="github" class="skill-img">
                         </a>
                     </div>
+                    <div class="meta"
+                         data-title="Interactive Video Player"
+                         data-text="Object Orientated JS program to display video and controls"
+                         data-img-sm="img/html-video-400px.jpg"
+                         data-img-md="img/html-video-600px.jpg"
+                         data-img-l="img/html-video-800px.jpg"
+                         data-img-xl="img/html-video-1000px.jpg"
+                    >
+                    </div>
                 </div>
             </div>
             <div class="col-1-4">
@@ -109,6 +116,16 @@
                         <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
                             repo</a>
                     </div>
+                    <div class="meta"
+                         data-title="Web App Dashboard"
+                         data-text="Many websites do more than just give you information. Sites like GitHub, Zillow, Mint and
+                            Treehouse let users do things. They act like programs you run on your computer. These web
+                            applications, often include pages for looking at your profile, what you've done in the week
+                            or what you need to get done.
+                            In this project, I took a mockup and a few icons and built a beautiful, web dashboard
+                            complete with JavaScript-driven charts and graphs."
+                         data-img="img/web-app-dashboard-800px.jpg"
+                    ></div>
                 </div>
             </div>
             <div class="col-1-4">
