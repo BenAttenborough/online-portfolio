@@ -3,12 +3,12 @@
   background-color: #fff;
   padding: 1rem;
   @include border-radius($border-radius);
-  @include box-shadow(rgba(153,153,153,1) 1px 1px 5px 0);
+  @include box-shadow(rgba(153, 153, 153, 1) 1px 1px 5px 0);
   @include transition-property(all);
   @include transition-duration(0.25s);
   @include transition-timing-function(ease-out);
   &:hover {
-    @include box-shadow(rgba(153,153,153,1) 3px 3px 15px 0);
+    @include box-shadow(rgba(153, 153, 153, 1) 3px 3px 15px 0);
     margin-top: -2px;
     margin-bottom: 2px;
   }
@@ -54,4 +54,12 @@
   font-size: 3rem;
   color: #BBB;
   //margin-right: 0.8rem;
+}
+
+.card-options {
+  margin-top: 1rem;
+  text-align: end;
+  a {
+    font-size: 1.25rem;
+  }
 }

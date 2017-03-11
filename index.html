@@ -33,13 +33,22 @@
                 <img src="img/js-file.svg" alt="github" class="skill-img">
             </div>
             <div class="card-options">
-                <a href="https://benattenborough.github.io/web_app_dashboard/" target="_blank">Live
-                    Project</a>
-                <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
-                    repo</a>
+                <a id="overlay-card-github" href="#" target="_blank">Github</a>
+                <a id="overlay-card-live" href="#" target="_blank">Live</a>
             </div>
         </div>
     </div>
+</div>
+
+<div id="main-nav" class="primary-menu">
+    <ul class="primary-menu-links">
+        <li><a href="#treehouse-link">Treehouse</a></li>
+        <li><a href="#wordpress-link">WordPress</a></li>
+        <li><a href="#contact-link">Contact</a></li>
+    </ul>
+    <ul class="primary-menu-contact">
+        <a href="mailto:battenborough@gmail.com?Subject=Design%20query">battenborough@gmail.com</a>
+    </ul>
 </div>
 
 <div class="banner-main">
@@ -57,6 +66,7 @@
         <header>
             <h1>Online portfolio</h1>
             <h2>Treehouse</h2>
+            <div id="treehouse-link" class="anchor-link"></div>
         </header>
 
         <div class="grid">
@@ -65,7 +75,7 @@
                     <div>
                         <img src="img/html-video-600px.jpg"
                              srcset="img/html-video-200px.jpg 200w,
-                            img/html-video-400px.jpg 400w,
+                            img/web-app-dashboard-400px.jpg 400w,
                             img/html-video-600px.jpg 600w,
                             img/html-video-800px.jpg 800w,
                             img/html-video-1000px.jpg 1000w"
@@ -76,7 +86,7 @@
                     </div>
                     <div class="card-text">
                         <h3>Interactive Video Player</h3>
-                        <p>Object Orientated JS program to display video and controls</p>
+                        <p>This project is a HTML5 video player using JavaScript and the HTML5 Video API.</p>
                     </div>
                     <div class="card-skills">
                         <hr>
@@ -89,32 +99,48 @@
                     </div>
                     <div class="meta"
                          data-title="Interactive Video Player"
-                         data-text="Object Orientated JS program to display video and controls"
+                         data-text="<p>It is an interactive video player that synchronizes the video and the transcript.</p>
+                        <p>The transcript is placed below the video, and highlights as the video progresses.</p>
+                        <p>When a user clicks any part of the transcript it takes them to the appropriate place in the video.</p>
+                        <p>The video also displays the amount of data that has been buffered.</p>
+                        <p>There are controls for controls, volume and the ability to go full screen.</p>
+                        <p>I have also included optional subtitles.</p>"
                          data-img-sm="img/html-video-400px.jpg"
                          data-img-md="img/html-video-600px.jpg"
                          data-img-l="img/html-video-800px.jpg"
                          data-img-xl="img/html-video-1000px.jpg"
+                         data-git="https://github.com/BenAttenborough/interactive-video-player"
+                         data-live="http://benattenborough.github.io/interactive-video-player"
                     >
                     </div>
                 </div>
             </div>
             <div class="col-1-4">
                 <div class="card">
-                    <div class="card-image" style="background-image: url('img/web-app-dashboard-800px.jpg')"></div>
+                    <div>
+                        <img src="img/web-app-dashboard-400px.jpg"
+                             srcset="img/web-app-dashboard-400px.jpg 400w,
+                             img/web-app-dashboard-600px.jpg 600w,
+                             img/web-app-dashboard-800px.jpg 800w,
+                             img/web-app-dashboard-1000px.jpg 1000w"
+                             sizes="(min-width: 800px) and (max-width: 1199px) 50vw, (min-width: 1200px) 33.3vw, 100vw"
+                             alt="Web API"
+                             class="project-image"
+                        >
+                    </div>
                     <div class="card-text">
                         <h3>Web App Dashboard</h3>
-                        <p>Many websites do more than just give you information. Sites like GitHub, Zillow, Mint and
-                            Treehouse let users do things. They act like programs you run on your computer. These web
-                            applications, often include pages for looking at your profile, what you've done in the week
-                            or what you need to get done.
-                            In this project, I took a mockup and a few icons and built a beautiful, web dashboard
+                        <p>In this project, I took a mockup and a few icons and built a web dashboard
                             complete with JavaScript-driven charts and graphs.</p>
                     </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_app_dashboard/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
-                            repo</a>
+                    <div class="card-skills">
+                        <hr>
+                        <p>Skills:</p>
+                        <a href="#">
+                            <img src="img/html-5.svg" alt="github" class="skill-img">
+                            <img src="img/css-logo.svg" alt="github" class="skill-img">
+                            <img src="img/js-file.svg" alt="github" class="skill-img">
+                        </a>
                     </div>
                     <div class="meta"
                          data-title="Web App Dashboard"
@@ -124,219 +150,144 @@
                             or what you need to get done.
                             In this project, I took a mockup and a few icons and built a beautiful, web dashboard
                             complete with JavaScript-driven charts and graphs."
-                         data-img="img/web-app-dashboard-800px.jpg"
+                         data-img-sm="img/web-app-dashboard-400px.jpg"
+                         data-img-md="img/web-app-dashboard-600px.jpg"
+                         data-img-l="img/web-app-dashboard-800px.jpg"
+                         data-img-xl="img/web-app-dashboard-1000px.jpg"
+                         data-git="https://github.com/BenAttenborough/web_app_dashboard"
+                         data-live="https://benattenborough.github.io/web_app_dashboard/"
                     ></div>
                 </div>
             </div>
             <div class="col-1-4">
                 <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/web-api-800px.jpg')"></div>
+                    <div>
+                        <img src="img/web-api-400px.jpg"
+                             srcset="img/web-api-400px.jpg 400w,
+                             img/web-api-600px.jpg 600w,
+                             img/web-api-800px.jpg 800w,
+                             img/web-api-1000px.jpg 1000w"
+                             sizes="(min-width: 800px) and (max-width: 1199px) 50vw, (min-width: 1200px) 33.3vw, 100vw"
+                             alt="Web API"
+                             class="project-image"
+                        >
+                    </div>
                     <div class="card-text">
                         <h3>Web API</h3>
-                        <p>Use at least 1 of the supplied APIs to grab data from at least 6 items from that API. For
-                            example, 6 books on Open Library, or 6 movies from the Open Movie Database. Display these
-                            items on a page in an attractive gallery of images or titles. Clicking the image or title,
-                            opens a lightbox just as in the Interactive Lightbox project earlier with detailed
-                            information about the item.</p>
+                        <p>Accesses an API to display content depending on user input.</p>
                     </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_api/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_api" target="_blank">Github
-                            repo</a>
+                    <div class="card-skills">
+                        <hr>
+                        <p>Skills:</p>
+                        <a href="#">
+                            <img src="img/html-5.svg" alt="github" class="skill-img">
+                            <img src="img/css-logo.svg" alt="github" class="skill-img">
+                            <img src="img/js-file.svg" alt="github" class="skill-img">
+                        </a>
                     </div>
+                    <div class="meta"
+                         data-title="Web API"
+                         data-text="<p>Connect with the Spotify or Open Library API and displays items depending on user input.
+                         Upon clicking on a thumbnail image extra data is shown depending on the item type selected.
+                         This project demonstrates both the use of API technology to dynamically fetch data, but also the ability to dynamically refresh the screen using ajax.</p>"
+                         data-img-sm="img/web-api-400px.jpg"
+                         data-img-md="img/web-api-600px.jpg"
+                         data-img-l="img/web-api-800px.jpg"
+                         data-img-xl="img/web-api-1000px.jpg"
+                         data-git="https://github.com/BenAttenborough/web_api"
+                         data-live="https://benattenborough.github.io/web_api/"
+                    ></div>
                 </div>
             </div>
             <div class="col-1-4">
                 <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/Interactive video player-800px.jpg')"></div>
+                    <div>
+                        <img src="img/gallery-400px.jpg"
+                             srcset="img/gallery-400px.jpg 400w,
+                             img/gallery-600px.jpg 600w,
+                             img/gallery-800px.jpg 800w,
+                             img/gallery-1000px.jpg 1000w"
+                             sizes="(min-width: 800px) and (max-width: 1199px) 50vw, (min-width: 1200px) 33.3vw, 100vw"
+                             alt="Interactive gallery"
+                             class="project-image"
+                        >
+                    </div>
                     <div class="card-text">
-                        <h3>Interactive Video Player</h3>
-                        <p>Object Orientated JS program to display video and controls</p>
-                        <p>Using the supplied mockups, video files, and transcript, I built an interactive video
-                            player that synchronizes the video and the transcript. The transcript is placed
-                            below the video, and highlights as the video progresses. When a user clicks any part
-                            of the transcript it takes them to the appropriate place in the video</p>
+                        <h3>Interactive gallery</h3>
+                        <p>Shows thumbnail images in a grid, displays image in lightbox on click.</p>
                     </div>
-                    <div class="card-options">
-                        <a href="pages/treehouse/media-player.html">Info</a>
-                        <a href="http://benattenborough.github.io/interactive-video-player/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/interactive-video-player" target="_blank">Github
-                            repo</a>
+                    <div class="card-skills">
+                        <hr>
+                        <p>Skills:</p>
+                        <a href="#">
+                            <img src="img/html-5.svg" alt="github" class="skill-img">
+                            <img src="img/css-logo.svg" alt="github" class="skill-img">
+                            <img src="img/js-file.svg" alt="github" class="skill-img">
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="col-1-4">
-                <div class="card">
-                    <div class="card-image" style="background-image: url('img/web-app-dashboard-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Web App Dashboard</h3>
-                        <p>Many websites do more than just give you information. Sites like GitHub, Zillow, Mint and
-                            Treehouse let users do things. They act like programs you run on your computer. These web
-                            applications, often include pages for looking at your profile, what you've done in the week
-                            or what you need to get done.
-                            In this project, I took a mockup and a few icons and built a beautiful, web dashboard
-                            complete with JavaScript-driven charts and graphs.</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_app_dashboard/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
-                            repo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-4">
-                <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/web-api-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Web API</h3>
-                        <p>Use at least 1 of the supplied APIs to grab data from at least 6 items from that API. For
-                            example, 6 books on Open Library, or 6 movies from the Open Movie Database. Display these
-                            items on a page in an attractive gallery of images or titles. Clicking the image or title,
-                            opens a lightbox just as in the Interactive Lightbox project earlier with detailed
-                            information about the item.</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_api/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_api" target="_blank">Github
-                            repo</a>
-                    </div>
+                    <div class="meta"
+                         data-title="Web API"
+                         data-text="<p>At the top of the page you'll have a search area where photos will hide and show depending on user input.
+                         When the user clicks on a thumbnail the photo will display in a lightbox.
+                         There are also back and previous buttons to cycle through photos.</p>"
+                         data-img-sm="img/gallery-400px.jpg"
+                         data-img-md="img/gallery-600px.jpg"
+                         data-img-l="img/gallery-800px.jpg"
+                         data-img-xl="img/gallery-1000px.jpg"
+                         data-git="https://github.com/BenAttenborough/interactive-photo-gallery"
+                         data-live="http://benattenborough.github.io/interactive-photo-gallery/"
+                    ></div>
                 </div>
             </div>
         </div>
 
-        <div class="grid">
-            <div class="col-1-3">
-                <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/Interactive video player-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Interactive Video Player</h3>
-                        <p>Object Orientated JS program to display video and controls</p>
-                        <p>Using the supplied mockups, video files, and transcript, I built an interactive video
-                            player that synchronizes the video and the transcript. The transcript is placed
-                            below the video, and highlights as the video progresses. When a user clicks any part
-                            of the transcript it takes them to the appropriate place in the video</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="http://benattenborough.github.io/interactive-video-player/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/interactive-video-player" target="_blank">Github
-                            repo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="card">
-                    <div class="card-image" style="background-image: url('img/web-app-dashboard-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Web App Dashboard</h3>
-                        <p>Many websites do more than just give you information. Sites like GitHub, Zillow, Mint and
-                            Treehouse let users do things. They act like programs you run on your computer. These web
-                            applications, often include pages for looking at your profile, what you've done in the week
-                            or what you need to get done.
-                            In this project, I took a mockup and a few icons and built a beautiful, web dashboard
-                            complete with JavaScript-driven charts and graphs.</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_app_dashboard/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
-                            repo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/web-api-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Web API</h3>
-                        <p>Use at least 1 of the supplied APIs to grab data from at least 6 items from that API. For
-                            example, 6 books on Open Library, or 6 movies from the Open Movie Database. Display these
-                            items on a page in an attractive gallery of images or titles. Clicking the image or title,
-                            opens a lightbox just as in the Interactive Lightbox project earlier with detailed
-                            information about the item.</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_api/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_api" target="_blank">Github
-                            repo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <h2>WordPress</h2>
+        <div id="wordpress-link" class="anchor-link"></div>
 
         <div class="grid">
-            <div class="col-1-3">
+            <div class="col-1-4">
                 <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/Interactive video player-800px.jpg')"></div>
+                    <div>
+                        <img src="img/eastlife-responsive-400px.jpg"
+                             srcset="img/eastlife-responsive-400px.jpg 400w,
+                             img/eastlife-responsive-600px.jpg 600w,
+                             img/eastlife-responsive-800px.jpg 800w,
+                             img/eastlife-responsive-1000px.jpg 1000w"
+                             sizes="(min-width: 800px) and (max-width: 1199px) 50vw, (min-width: 1200px) 33.3vw, 100vw"
+                             alt="eastlife"
+                             class="project-image"
+                        >
+                    </div>
                     <div class="card-text">
-                        <h3>Interactive Video Player</h3>
-                        <p>Object Orientated JS program to display video and controls</p>
-                        <p>Using the supplied mockups, video files, and transcript, I built an interactive video
-                            player that synchronizes the video and the transcript. The transcript is placed
-                            below the video, and highlights as the video progresses. When a user clicks any part
-                            of the transcript it takes them to the appropriate place in the video</p>
+                        <h3>Eastlife Magazine</h3>
+                        <p>Tourism magazine for the East of England</p>
                     </div>
-                    <div class="card-options">
-                        <a href="http://benattenborough.github.io/interactive-video-player/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/interactive-video-player" target="_blank">Github
-                            repo</a>
+                    <div class="card-skills">
+                        <hr>
+                        <p>Skills:</p>
+                        <a href="#">
+                            <img src="img/html-5.svg" alt="github" class="skill-img">
+                            <img src="img/css-logo.svg" alt="github" class="skill-img">
+                            <img src="img/js-file.svg" alt="github" class="skill-img">
+                        </a>
                     </div>
+                    <div class="meta"
+                         data-title="Eastlife Magazine"
+                         data-text="<p>I took a partially designed and developed theme and took it online. The website reflects the content of the eastlife magazine. Our team of editors write stories and upload them to the site.
+I have developed a forthcoming events system for which I used my skills in css, javascript (including ajax to dynamically load events based on a user’s criteria), and php. This system allows user to create and manage their own events. You can see this project at: <a href='https://www.eastlife.co.uk/events' target='_blank'>www.eastlife.co.uk/events</a>.
+I have also created a dog friendly business directory which also us to add businesses that are friendly to customers with dogs. The system includes a Google map which shows all the businesses listed.
+I have also developed a competition system which links with a Mail Chimp list to collect email addresses. This system has allowed our sales team to add another product to sell into, as well as a good way to collect customer information and add new visitor to the site. It has proven popular because businesses get to buy the data and thus get a list of email addresses of potential customers.</p>"
+                         data-img-sm="img/eastlife-responsive-400px.jpg"
+                         data-img-md="img/eastlife-responsive-600px.jpg"
+                         data-img-l="img/eastlife-responsive-800px.jpg"
+                         data-img-xl="img/eastlife-responsive-1000px.jpg"
+                         data-git="#"
+                         data-live="https://eastlife.co.uk"
+                    ></div>
                 </div>
             </div>
-            <div class="col-1-3">
-                <div class="card">
-                    <div class="card-image" style="background-image: url('img/web-app-dashboard-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Web App Dashboard</h3>
-                        <p>Many websites do more than just give you information. Sites like GitHub, Zillow, Mint and
-                            Treehouse let users do things. They act like programs you run on your computer. These web
-                            applications, often include pages for looking at your profile, what you've done in the week
-                            or what you need to get done.
-                            In this project, I took a mockup and a few icons and built a beautiful, web dashboard
-                            complete with JavaScript-driven charts and graphs.</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_app_dashboard/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_app_dashboard" target="_blank">Github
-                            repo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="card">
-                    <div class="card-image"
-                         style="background-image: url('img/web-api-800px.jpg')"></div>
-                    <div class="card-text">
-                        <h3>Web API</h3>
-                        <p>Use at least 1 of the supplied APIs to grab data from at least 6 items from that API. For
-                            example, 6 books on Open Library, or 6 movies from the Open Movie Database. Display these
-                            items on a page in an attractive gallery of images or titles. Clicking the image or title,
-                            opens a lightbox just as in the Interactive Lightbox project earlier with detailed
-                            information about the item.</p>
-                    </div>
-                    <div class="card-options">
-                        <a href="https://benattenborough.github.io/web_api/" target="_blank">Live
-                            Project</a>
-                        <a href="https://github.com/BenAttenborough/web_api" target="_blank">Github
-                            repo</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
 
@@ -383,6 +334,15 @@
                 </div>
             </div>
         </div>
+
+        <h2>Contact</h2>
+        <div id="contact-link" class="anchor-link"></div>
+
+        <ul>
+            <li>Email</li>
+            <li>Linked in</li>
+            <li>Twitter</li>
+        </ul>
 
     </main>
 

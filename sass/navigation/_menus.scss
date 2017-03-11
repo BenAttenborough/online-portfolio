@@ -1,3 +1,40 @@
 .menu {
   background-color: black;
+
+}
+
+.primary-menu {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  color: #fff;
+  a {
+    @include link-colors(#fff);
+    @include hover-link;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    @include link-colors(#fff);
+  }
+}
+
+.primary-menu-links {
+  width: 50%;
+  float: left;
+}
+
+.primary-menu-contact {
+  float: right;
+}
+
+.anchor-link {
+  display: block;
+  position: relative;
+  top: -9rem;
+  visibility: hidden;
 }
