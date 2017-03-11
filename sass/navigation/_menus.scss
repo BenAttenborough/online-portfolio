@@ -7,7 +7,7 @@
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   color: #fff;
   a {
     @include link-colors(#fff);
@@ -26,6 +26,7 @@
 .primary-menu-links {
   width: 50%;
   float: left;
+  padding: 0;
 }
 
 .primary-menu-contact {

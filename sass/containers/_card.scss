@@ -39,7 +39,7 @@
 
 .card-overlay {
   overflow: scroll;
-  margin: 0 auto;
+  margin: 100vh auto 0;
   padding: 1rem 2rem 2rem;
   background-color: #fff;
   @include border-radius($border-radius);

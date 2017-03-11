@@ -3,6 +3,9 @@
  */
 
 $(".card-close-btn").click(function(){
+   $(".card-overlay").animate({
+      'marginTop' : "100vh"
+   });
    $("#overlay").hide();
    $("body").css('overflow','visible');
 });
@@ -46,6 +49,9 @@ for (var i = 0; i < cards.length; i++) {
       console.log($("#overlay-card-live").attr("href", livesite));
 
       $("#overlay").show();
+      $(".card-overlay").animate({
+         'marginTop' : "0"
+      });
       $("body").css('overflow', 'hidden');
    });
 }

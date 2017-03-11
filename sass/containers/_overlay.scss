@@ -6,6 +6,7 @@
   background-color: rgba(10, 10, 10, 0.8);
   display: none;
   overflow-y: scroll;
+  z-index: 999;
 }
 
 #overlay-inner-container {
