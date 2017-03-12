@@ -15,6 +15,7 @@ var cards = $(".card");
 var title;
 var text;
 var imgSrc;
+var img;
 var imgSm;
 var imgMd;
 var imgL;
@@ -26,6 +27,7 @@ for (var i = 0; i < cards.length; i++) {
    cards.eq(i).click(function() {
       title = $(this).children(".meta").data("title");
       text = $(this).children(".meta").data("text");
+      img = $(this).children(".meta").data("img");
       imgSm = $(this).children(".meta").data("img-sm");
       imgMd = $(this).children(".meta").data("img-md");
       imgL = $(this).children(".meta").data("img-l");
@@ -33,12 +35,12 @@ for (var i = 0; i < cards.length; i++) {
       git = $(this).children(".meta").data("git");
       livesite = $(this).children(".meta").data("live");
 
-      imgSrc = "<img src=\"img/html-video-600px.jpg\" ";
+      imgSrc = "<img src=\"" + img + "-800px.jpg\" ";
       imgSrc += "srcset=\"";
-      imgSrc += imgSm + " 400w, ";
-      imgSrc += imgMd + " 600w, ";
-      imgSrc += imgL + " 800w, ";
-      imgSrc += imgXl + " 1000w\" ";
+      imgSrc += img + "-400px.jpg 400w, ";
+      imgSrc += img + "-600px.jpg 600w, ";
+      imgSrc += img + "-800px.jpg 800w, ";
+      imgSrc += img + "-1000px.jpg 1000w\" ";
       imgSrc += "alt=\"" + title + "\"";
       imgSrc += "class=\"project-image\">";
 

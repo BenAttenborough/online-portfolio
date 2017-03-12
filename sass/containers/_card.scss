@@ -22,6 +22,16 @@
   @include border-top-radius($border-radius);
 }
 
+.card-thumbnails {
+  display: flex;
+  .thumb {
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .card-text {
   p {
     color: #555;
