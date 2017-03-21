@@ -1,9 +1,9 @@
 .menu {
   background-color: black;
-
 }
 
-.primary-menu {
+.primary-menu,
+.mobile-menu {
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -11,15 +11,42 @@
   color: #fff;
   a {
     @include link-colors(#fff);
-    @include hover-link;
+  }
+  ul {
+    padding: 0;
   }
   li {
     list-style: none;
-    display: inline;
     font-weight: bold;
     text-transform: capitalize;
-    margin-right: 1rem;
     @include link-colors(#fff);
+  }
+
+}
+
+.primary-menu {
+  display: none;
+  a {
+    @include hover-link;
+  }
+  li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  @include tablet-sm {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  text-align: center;
+  padding: 1rem;
+  li {
+    display: block;
+    margin-top: 1.5rem;
+  }
+  @include tablet-sm {
+    display: none;
   }
 }
 
@@ -39,3 +66,4 @@
   top: -9rem;
   visibility: hidden;
 }
+
