@@ -24,8 +24,12 @@
 
 .card-thumbnails {
   display: flex;
+  margin: 1rem 0;
   .thumb {
-    margin: 0 auto;
+    margin: 0 1rem;
+    @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.24));
+    @include border-radius(5px);
+    background-color: #eee;
     img {
       padding: 1rem;
       width: 100%;

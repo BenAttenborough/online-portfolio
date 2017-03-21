@@ -21,19 +21,21 @@ var srcSet;
 var img;
 var git;
 var livesite;
-var thumbs;
 var thumbsContainer = "";
 for (var i = 0; i < cards.length; i++) {
     cards.eq(i).click(i, cardClickHandler);
 }
 
-$(".thumb").click(function () {
-    var src = $(this).children("img").attr("src");
-    var srcImg = src.substring(0, src.length - 10);
-    var alt = $(this).children("img").attr("alt");
-    var srcSet = createSrcSet(srcImg, alt);
-    $("#overlay-card-img").html(srcSet);
-});
+function assignThumbEvents() {
+    $(".thumb").click(function () {
+        console.log("Thumb clicked");
+        var src = $(this).children("img").attr("src");
+        var srcImg = src.substring(0, src.length - 10);
+        var alt = $(this).children("img").attr("alt");
+        var srcSet = createSrcSet(srcImg, alt);
+        $("#overlay-card-img").html(srcSet);
+    });
+}
 
 function createSrcSet(imgPath, alt) {
     var imgSrc;
@@ -49,7 +51,6 @@ function createSrcSet(imgPath, alt) {
 }
 
 function cardClickHandler(e) {
-    console.log("i in closure = " + j.data);
     title = $(this).children(".meta").data("title");
     text = $(this).children(".meta").data("text");
     img = $(this).children(".meta").data("img");
@@ -77,12 +78,23 @@ function cardClickHandler(e) {
     $("#overlay-card-title").html("<h2>" + title + "</h2>");
     $("#overlay-card-text").html(text);
     $("#overlay-card-img").html(srcSet);
-    $("#overlay-card-thumbs").empty();
     $("#overlay-card-thumbs").html(thumbsContainer);
+    if (git !== "#") {
+        $("#overlay-card-github").attr("href", git);
+    } else {
+        $("#overlay-card-github").hide();
+    }
+    if (livesite !== "#") {
+        $("#overlay-card-live").attr("href", livesite);
+    } else {
+        $("#overlay-card-live").hide();
+    }
 
     $("#overlay").show();
     $(".card-overlay").animate({
         'marginTop': "0"
     });
     $("body").css('overflow', 'hidden');
+    $(".thumb").unbind("click");
+    assignThumbEvents();
 }

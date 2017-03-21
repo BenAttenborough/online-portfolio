@@ -1,0 +1,18 @@
+.contact-icons {
+  display: flex;
+  padding: 0;
+  li {
+    margin: auto;
+    list-style: none;
+  }
+}
+
+.contact-icon {
+  height: 2rem;
+  @include tablet {
+    height: 2.5rem;
+  }
+  @include desktop {
+    height: 3rem;
+  }
+}

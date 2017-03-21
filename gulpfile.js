@@ -58,13 +58,9 @@ gulp.task('build', function () {
             'css/style.css*',
             'img/**',
             'js/**',
-            '*.php',
-            '*.js',
+            '*.html',
             '*.md',
-            '*.txt',
-            '*.css',
-            '*.css*',
-            '*.png'
+            '*.txt'
         ],
         {base: './'})
         .pipe(gulp.dest('dist'))
