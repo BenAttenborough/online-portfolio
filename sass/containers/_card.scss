@@ -2,6 +2,7 @@
   margin: 0 auto;
   background-color: #fff;
   padding: 1rem;
+  cursor: pointer;
   @include border-radius($border-radius);
   @include box-shadow(rgba(153, 153, 153, 1) 1px 1px 5px 0);
   @include transition-property(all);
@@ -38,9 +39,10 @@
 }
 
 .card-text {
-  p {
-    color: #555;
-  }
+  padding: 1rem 0;
+  color: #555;
+  max-width: 35rem;
+  margin: 0 auto;
 }
 
 .card-options a {
@@ -55,9 +57,12 @@
 .card-overlay {
   overflow: scroll;
   margin: 100vh auto 0;
-  padding: 1rem 2rem 2rem;
   background-color: #fff;
   @include border-radius($border-radius);
+}
+
+.card-content {
+  padding: 0 2rem 2rem;
 }
 
 .card-close-btn-container {
@@ -66,10 +71,20 @@
 }
 
 .card-close-btn {
+  cursor: pointer;
+}
+
+.card-close-btn-svg {
+  height: 2rem;
   float: right;
-  font-size: 3rem;
-  color: #BBB;
-  //margin-right: 0.8rem;
+  margin: 1.5rem 1.5rem 0 0;
+}
+
+.card-close-btn-icon {
+  fill: none;
+  stroke: #bbb;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
 }
 
 .card-options {
@@ -77,5 +92,13 @@
   text-align: end;
   a {
     font-size: 1.25rem;
+  }
+}
+
+.card-title {
+  width: 100%;
+  text-align: center;
+  h2 {
+    margin: 1rem 0;
   }
 }
