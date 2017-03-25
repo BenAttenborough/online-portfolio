@@ -44,6 +44,25 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(cssDir))
 });
 
+gulp.task('concat', function () {
+    return gulp.src([
+        'js/menu.js',
+        'js/itemview.js'
+    ])
+        .on('error', swallowError)
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('js'))
+});
+
+gulp.task('minimise', function () {
+    return gulp.src([
+        'js/app.js'
+    ])
+        .on('error', swallowError)
+        .pipe(uglify('app.js'))
+        .pipe(gulp.dest('js'))
+});
+
 gulp.task('watch', function () {
     gulp.watch('sass/**/*.scss', ['compass'])
 });
