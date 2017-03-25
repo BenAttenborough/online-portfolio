@@ -1,7 +1,7 @@
 $pad: 10px;
 
 .grid {
-  margin: 0;
+  margin: 0 -10px;
   &:after {
     @extend .clearfix;
   }
