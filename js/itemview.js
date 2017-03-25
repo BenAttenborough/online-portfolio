@@ -3,6 +3,22 @@
  */
 
 $(".card-close-btn").click(function () {
+    closeCard();
+});
+
+// Event seems to propagate
+//$("#overlay").click(function (event) {
+//    event.stopPropagation();
+//    closeCard(event);
+//});
+
+$(document).keyup(function(e) {
+    if (e.keyCode == 27) { // escape key maps to keycode `27`
+        closeCard();
+    }
+});
+
+function closeCard() {
     $(".card-overlay").animate({
         'marginTop': "100vh"
     });
@@ -11,7 +27,7 @@ $(".card-close-btn").click(function () {
     console.log($("#overlay-card-thumbs"));
     $("#overlay").hide();
     $("body").css('overflow', 'visible');
-});
+}
 
 var cards = $(".card");
 
@@ -33,7 +49,17 @@ function assignThumbEvents() {
         var srcImg = src.substring(0, src.length - 10);
         var alt = $(this).children("img").attr("alt");
         var srcSet = createSrcSet(srcImg, alt);
-        $("#overlay-card-img").html(srcSet);
+        var mainImgHeight = $("#overlay-card-img").height();
+        console.log("mainImgHeight: " + mainImgHeight);
+        // Explicitly set height of container so that container doesn't "bounce"
+        // when next image is fetched
+        $("#overlay-card-img").height(mainImgHeight);
+
+        $("#overlay-card-img").fadeTo( "slow", 0, function() {
+            $("#overlay-card-img").html(srcSet);
+        });
+        $("#overlay-card-img").fadeTo( "slow" , 1);
+
     });
 }
 
@@ -96,5 +122,6 @@ function cardClickHandler(e) {
     });
     $("body").css('overflow', 'hidden');
     $(".thumb").unbind("click");
+
     assignThumbEvents();
 }
