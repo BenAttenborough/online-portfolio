@@ -49,16 +49,17 @@ function assignThumbEvents() {
         var srcImg = src.substring(0, src.length - 10);
         var alt = $(this).children("img").attr("alt");
         var srcSet = createSrcSet(srcImg, alt);
-        var mainImgHeight = $("#overlay-card-img").height();
-        console.log("mainImgHeight: " + mainImgHeight);
         // Explicitly set height of container so that container doesn't "bounce"
-        // when next image is fetched
+        // when next image is fetched - or if image is missing
+        var mainImgHeight = $("#project-image-main").height();
+        console.log("mainImgHeight: " + mainImgHeight);
         $("#overlay-card-img").height(mainImgHeight);
-
         $("#overlay-card-img").fadeTo( "slow", 0, function() {
             $("#overlay-card-img").html(srcSet);
         });
         $("#overlay-card-img").fadeTo( "slow" , 1);
+        // make container responsive once transition complete
+        $("#overlay-card-img").height("auto");
 
     });
 }
@@ -72,6 +73,7 @@ function createSrcSet(imgPath, alt) {
     imgSrc += imgPath + "-800px.jpg 800w, ";
     imgSrc += imgPath + "-1000px.jpg 1000w\" ";
     imgSrc += "alt=\"" + alt + "\" ";
+    imgSrc += "id=\"project-image-main\" ";
     imgSrc += "class=\"project-image\">";
     return imgSrc;
 }
