@@ -76,7 +76,7 @@ gulp.task('build', function () {
     return gulp.src([
             'css/style.css*',
             'img/**',
-            'js/**',
+            'js/app.js',
             '*.html',
             '*.md',
             '*.txt'
