@@ -6,12 +6,6 @@ $(".card-close-btn").click(function () {
     closeCard();
 });
 
-// Event seems to propagate
-//$("#overlay").click(function (event) {
-//    event.stopPropagation();
-//    closeCard(event);
-//});
-
 $(document).keyup(function(e) {
     if (e.keyCode == 27) { // escape key maps to keycode `27`
         closeCard();
@@ -23,8 +17,6 @@ function closeCard() {
         'marginTop': "100vh"
     });
     $("#overlay-card-thumbs").empty();
-    console.log("Emptying");
-    console.log($("#overlay-card-thumbs"));
     $("#overlay").hide();
     $("body").css('overflow', 'visible');
 }
@@ -44,7 +36,6 @@ for (var i = 0; i < cards.length; i++) {
 
 function assignThumbEvents() {
     $(".thumb").click(function () {
-        console.log("Thumb clicked");
         var src = $(this).children("img").attr("src");
         var srcImg = src.substring(0, src.length - 10);
         var alt = $(this).children("img").attr("alt");
@@ -52,7 +43,6 @@ function assignThumbEvents() {
         // Explicitly set height of container so that container doesn't "bounce"
         // when next image is fetched - or if image is missing
         var mainImgHeight = $("#project-image-main").height();
-        console.log("mainImgHeight: " + mainImgHeight);
         $("#overlay-card-img").height(mainImgHeight);
         $("#overlay-card-img").fadeTo( "slow", 0, function() {
             $("#overlay-card-img").html(srcSet);
@@ -96,8 +86,7 @@ function cardClickHandler(e) {
         }
     }
 
-    for (var i = 0; i < thumbs.length; i++) {
-        console.log("i outside closure = " + i);
+    for (i = 0; i < thumbs.length; i++) {
         thumbsContainer += "<div class=\"thumb\">";
         thumbsContainer += "<img src='" + thumbs[i] + "-400px.jpg'>";
         thumbsContainer += "</div>";

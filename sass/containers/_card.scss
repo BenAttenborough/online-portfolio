@@ -67,7 +67,7 @@
 
 .card-close-btn-container {
   width: 100%;
-  @include clearfix;
+  //@include clearfix;
 }
 
 .card-close-btn {
@@ -78,13 +78,6 @@
   height: 2rem;
   float: right;
   margin: 1.5rem 1.5rem 0 0;
-}
-
-.card-close-btn-icon {
-  fill: none;
-  stroke: #bbb;
-  stroke-miterlimit: 10;
-  stroke-width: 5px;
 }
 
 .card-options {
