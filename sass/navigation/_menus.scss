@@ -66,3 +66,17 @@
   visibility: hidden;
 }
 
+.hamburger {
+  width: auto;
+  float: right;
+}
+
+.hamburger-icon,
+.hamburger-icon-close {
+  height: 1rem;
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
